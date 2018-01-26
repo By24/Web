@@ -1,0 +1,23 @@
+<import src="../../Component/Component/Component.wxml"/>
+<import src="../../wxParse/wxParse.wxml"/>
+<template is="footer" data="{{ footer }}"></template>
+
+<view class='logName'>
+  <image src='../../images/background/banner.png'></image>
+    <view class='nameComponent' style='height:94rpx;'>
+      <image src='../../images/icon/N.png'></image>
+      <view class='name_name'>
+        <view style='color:#fff'>新闻动态</view>
+        <text style='color:#fff'>ews dynamics</text>
+      </view>
+    </view>
+  </view> 
+
+ <view class='news_name'>{{ newsTitle }}</view>
+<view class='news_centent'>
+    <!-- <text>{{newsDetails.nd_keyword }}</text>
+  <image src='{{ http + newsDetails.nd_img }}'></image> -->
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view> 
+
+
