@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="gbk">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=yes" />
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/phoneStyle.css">
+    <link rel="stylesheet" href="../css/phoneContactUs.css">
+    <style>
+        .page {
+            height: 100%;
+            margin-bottom: -3rem;
+        }
+    </style>
+</head>
+
+<body topmargin="0" id="contact">
+    <div class="page">
+        <header id="header1">
+            <div class="head">
+                <div class="logo">
+                    <a href="#"></a>
+                </div>
+                <nav>
+                    <a href="phoneIndex.html">首页</a>
+                    <a href="phoneProductDescription.html">产品介绍</a>
+                    <a href="phoneParentalCustody.html">家长监护</a>
+                    <a href="phoneContactUs.html" class="active">联系我们</a>
+                    <a href="Recharge.html">充值</a>
+                </nav>
+            </div>
+        </header>
+        <div class="centent">
+            <p>
+                <a href="tel:400-6843-7533" class="phone"></a>400-6843-7533</p>
+            <p>
+                <a href="javascript:;" class="weixin"></a>aitegame</p>
+            <p>
+                <a href="javascript:;" class="qq"></a>175334224</p>
+        </div>
+    </div>
+    <footer>
+        <p>成都市忆享科技有限公司 客服电话：0579-82020702</p>
+        <p>网站备案：浙ICP备17047261号-1</p>
+        <p>健康游戏公告：抵制不良游戏 拒绝盗版 注意自我保护 适度游戏益脑 沉迷游戏伤身 合理安排事件 享受健康生活 浙江天鱼网络科技有限公司 版权所有 2017 tianyu18.com</p>
+    </footer>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/PublicStyle.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+    $(function () {
+        $(document).on("click", ".qq", clickQq)
+        $(document).on("click", ".weixin", weixin)
+    })
+    clickQq = function () {
+        PlayJsAdPopWin()
+    }
+    weixin = function () {
+        onBridgeReady()
+    }
+    function PlayJsAdPopWin() {
+        popwin = window.location.href = 'tencent://message/?uin=175334224&Site=""&Menu=yes'
+    };
+    function onBridgeReady() {
+        wx.config({
+            debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，
+            //可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+            appId: '', // 必填，公众号的唯一标识
+            timestamp: '', // 必填，生成签名的时间戳
+            nonceStr: '', // 必填，生成签名的随机串
+            signature: '',// 必填，签名，见附录1
+            jsApiList: [] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+        });
+        wx.ready(function () {
+            console.log(11)
+            //  config信息验证后会执行ready方法，
+            // 所有接口调用都必须在config接口获得结果之后
+            // ，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，
+            // 则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，
+            // 则可以直接调用，不需要放在ready函数中。
+        });
+        wx.error(function (res) {
+            console.log(22)
+            // config信息验证失败会执行error函数，如签名过期导致验证失败，
+            // 具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，
+            // 对于SPA可以在这里更新签名。
+        });
+    }
+</script>
+
+</html>

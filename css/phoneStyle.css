@@ -1,0 +1,211 @@
+
+@font-face {
+    font-family: MicrosoftYaHei;
+    src: url('../font/iconfont.eot'); /* IE9 Compat Modes */
+    src: url('../font/iconfont.woff') format('woff'), /* Modern Browsers */
+         url('../font/iconfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../font/iconfont.svg') format('svg'); /* Legacy iOS */
+   }
+body { 
+    font-family: MicrosoftYaHei;
+    /* font-family:Arial,Helvetica,sans-serif; */
+    font-size:100%;
+}
+html, body{ height:100%; }
+
+header{
+    width: 100%;
+    height:9.8rem;
+    background: url('../img/index/indexph-1.png') no-repeat center;
+    background-size: cover;
+} 
+.head{
+    display: flex;
+    width: 95%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem .48rem;
+    height: 1.8rem;
+    background: rgba(000, 000, 000, .45)
+}
+
+.logo>a{
+    display: block;
+    width: 2.64rem;
+    height: 1.2rem;
+    background: url("../img/index/logo.png") no-repeat center;
+    background-size: 100% 100%;
+}
+nav{
+    display: flex;
+    height: .9rem;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>a{
+    font-family: font;
+    display: inline-block;
+    text-align: center;
+    font-size: .52rem;
+    width: auto;
+    color: #ffffff;
+    border-bottom: .06rem solid  rgba(000, 000, 000, .0);
+    padding: .64rem 0 .58rem 0;
+    margin: 0 .2rem;
+    font-family: MicrosoftYaHei;
+}
+nav>a:last-child{
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: .12rem;
+    padding: .1rem .3rem
+}
+nav>a.active{
+    border-color: #dc3882
+}
+
+@media(max-width:350px){
+    .head{
+        padding: 0 .24rem;
+    }
+}
+.head-centent{
+    padding: 3.6rem 0 0 2.16rem ;
+    /* width: 4.68rem */
+}
+.head-centent p{
+    margin: 0;
+}
+.head-centent>img:nth-child(1){
+   display: block;
+    width: 3.04rem;
+    height: .76rem;
+    /* font-size: .76rem;
+    color: #fff; */
+}
+.head-centent>img:nth-child(2){
+    margin: .32rem 0 .48rem 0;
+    display: block;
+    width: 4.6rem;
+    height: .44rem;
+    /* font-size: .44rem;
+    color: #fff;
+    font-family: "PingHei-Light";
+    margin: -.16rem 0 .24rem 0; */
+}
+.download{
+    height: 1.76rem;
+    display: flex;
+    align-items: center;
+}
+.download>img{
+    width: 1.76rem;
+    height: 1.76rem;
+}
+.download_{
+    height: 100%;
+    margin-left: .28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.download_>a,.centent-right>img{
+    display: block;
+    width: 2.64rem;
+    height: .68rem;
+}
+
+.download_>a:nth-child(1){
+    background: url("../img/index/IOS.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.download_>a:nth-child(2){
+    background: url("../img/index/Androit.png") no-repeat center;
+    background-size: 100% 100%; 
+}
+.download_>a{
+    display: block;
+}
+footer{
+    background-color: #6b1e66;
+    height: 3rem;
+    padding: .4rem .52rem .4rem .52rem;
+}
+footer>p{
+    font-size: .52rem ;
+    color: #db83d5;
+    line-height: .6rem;
+    opacity: 0.4;
+}
+/* #contact footer{
+    position: absolute;
+    left: 0;
+    bottom:0;
+} */
+
+.myClass>.head{
+    background-color : rgba(000, 000, 000, 1) !important;
+    animation:myfirst 2s;
+    -moz-animation:myfirst 2s; /* Firefox */
+    -webkit-animation:myfirst 2s; /* Safari and Chrome */
+    -o-animation:myfirst 2s; /* Opera */
+  }
+
+@keyframes myfirst
+{
+from {background:rgba(000, 000, 000, .45);}
+to {background:rgba(000, 000, 000, 1);}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+  from {background:rgba(000, 000, 000, .45);}
+  to {background:rgba(000, 000, 000, 1);}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+  from {background:rgba(000, 000, 000, .45);}
+  to {background:rgba(000, 000, 000, 1);}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+  from {background:rgba(000, 000, 000, .45);}
+  to {background:rgba(000, 000, 000, 1);}
+  }
+
+.myClass1>.head{
+  background-color : rgba(000, 000, 000, .45) !important;
+  animation:myfirst1 2s;
+  -moz-animation:myfirst1 2s; /* Firefox */
+  -webkit-animation:myfirst1 2s; /* Safari and Chrome */
+  -o-animation:myfirst1 2s; /* Opera */
+}
+
+@keyframes myfirst1
+{
+from {background:rgba(000, 000, 000, 1);}
+to {background:rgba(000, 000, 000, .45);}
+}
+
+@-moz-keyframes myfirst1 /* Firefox */
+{
+  from {background:rgba(000, 000, 000, 1);}
+  to {background:rgba(000, 000, 000, .45);}
+}
+
+@-webkit-keyframes myfirst1 /* Safari and Chrome */
+{
+  from {background:rgba(000, 000, 000, 1);}
+  to {background:rgba(000, 000, 000, .2);}
+}
+
+@-o-keyframes myfirst1 /* Opera */
+{
+  from {background:rgba(000, 000, 000, 1);}
+  to {background:rgba(000, 000, 000, .2);}
+  }

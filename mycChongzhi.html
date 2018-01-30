@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游娱充值中心</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mycChongzhi.css">
+    <link rel="stylesheet" href="css/PublicStyle.css">
+</head>
+<style>
+    body {
+        background: #efefef;
+    }
+
+    form {
+        background: #fff;
+        width: 800px;
+        height: 710px;
+        margin: 30px auto;
+    }
+
+    form ul {
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    form ul li {
+        margin: 10px;
+    }
+
+    .title {
+        padding: 30px 0 40px 0;
+        font-size: 18px;
+        color: #1c2229;
+        text-align: center;
+    }
+
+    .radio-label {
+        position: relative;
+        border: 1px solid #d1d6db
+    }
+
+    .money {
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+        background: #fff;
+    }
+
+    .radio-label,
+    .money {
+        display: block;
+        width: 200px;
+        height: 80px;
+    }
+
+    .money:hover {
+        background: #efefef
+    }
+
+    header {
+        height: 99px;
+    }
+
+    nav {
+        background: #000 !important;
+        z-index: 10;
+    }
+
+    .money-1 {
+        font-size: 20px;
+        margin-left: 15px;
+        display: block;
+        color: #FF5D00;
+        height: 24px;
+        margin-top: 10px;
+        margin-bottom: 6px;
+    }
+
+    .money-2 {
+        font-size: 12px;
+        letter-spacing: 0;
+        display: block;
+        margin-left: 15px;
+        color: #667685;
+    }
+
+    .money-3 {
+        width: 60px;
+        height: 38px;
+        position: absolute;
+        right: 1px;
+        bottom: 10px;
+        background: url("img/icon/coin.png") no-repeat center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #monye {
+        border-color: #dc3882;
+        color: #dc3882;
+    }
+    .yuliang{
+        font-size: 12px;
+    }
+</style>
+
+<body>
+    <!-- 头部 -->
+    <header id="header1">
+        <nav class="aa">
+            <ul>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li class="nav">
+                    <a href="index.html">首页</a>
+                    <a href="productDescription.html">产品介绍</a>
+                    <a href="ParentalCustody.html">家长监护</a>
+                    <a href="contactUs.html">联系我们</a>
+                </li>
+                <li>
+                    <a href="mycChongzhi.html" id="monye">充值</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form action="Order.html" method="get" target="_blank">
+        <div class="title">游娱充值中心</div>
+        <ul>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="5" name="money">
+                    <div class="money" data-money="500">
+                        <span class="money-1">500 <span class="yuliang">鱼粮</span></span>
+                        <span class="money-2">$5</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="10" name="money">
+                    <div class="money">
+                        <span class="money-1">1000 <span class="yuliang">鱼粮</span></span>
+                        <span class="money-2">$10</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="20" name="money">
+                    <div class="money">
+                        <span class="money-1">2000 <span class="yuliang">鱼粮</span></span>
+                        <span class="money-2">$20</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="30" name="money">
+                    <div class="money">
+                        <span class="money-1">3000 <span class="yuliang">鱼粮</span></span>
+                        <span class="money-2">$30</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="40" name="money">
+                    <div class="money">
+                        <span class="money-1">4000 <span class="yuliang">鱼粮</span></span>
+                        <span class="money-2">$40</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="50" name="money">
+                    <div class="money">
+                        <span class="money-1">5000 <span class="yuliang">鱼粮</span></span>
+                        <span class="money-2">$50</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="100" name="money">
+                    <div class="money">
+                        <span class="money-1">10000</span>
+                        <span class="money-2">$100</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="200" name="money">
+                    <div class="money">
+                        <span class="money-1">20000 <span class="yuliang">鱼粮</span></span>
+                        <span class="money-2">$200</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="400" name="money">
+                    <div class="money">
+                        <span class="money-1">40000 <span class="yuliang">鱼粮</span></span>
+                        <span class="money-2">$400</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="500" name="money">
+                    <div class="money">
+                        <span class="money-1">50000 <span class="yuliang">鱼粮</span></span>
+                        <span class="money-2">$500</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="1000" name="money">
+                    <div class="money">
+                        <span class="money-1">100000 <span class="yuliang">鱼粮</span></span>
+                        <span class="money-2">$1000</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="radio-label">
+                    <input type="radio" value="2000" name="money">
+                    <div class="money">
+                        <span class="money-1">200000 <span class="yuliang">鱼粮</span></span>
+                        <span class="money-2">$2000</span>
+                        <span class="money-3"></span>
+                    </div>
+                </label>
+            </li>
+        </ul>
+    </form>
+
+    <footer>
+        <p>成都亿享科技有限公司　客服电话：0579-82020702</p>
+        <p>网站备案：浙ICP备17047261号-1</p>
+        <p>健康游戏公告：抵制不良游戏 拒绝盗版 注意自我保护 适度游戏益脑 沉迷游戏伤身 合理安排事件 享受健康生活 浙江天鱼网络科技有限公司 版权所有 2017 tianyu18.com</p>
+    </footer>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    $("form>ul>li").click(function () {
+        $('form').submit();
+    })
+</script>
+
+</html>
